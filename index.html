@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karvon — Hotels &amp; Places in Khiva, Uzbekistan</title>
+<meta name="description" content="Karvon helps you find where to stay and what to see in Khiva and Urgench — the ancient heart of Khorezm, Uzbekistan.">
+
+<meta property="og:title" content="Karvon — Hotels &amp; Places in Khiva">
+<meta property="og:description" content="Find where to stay and what to see in Khiva, Uzbekistan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://karvon-khiva.uz">
+<meta property="og:image" content="https://karvon-khiva.uz/assets/images/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ========================= HEADER ========================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M4 24 L10 12 L16 20 L22 8 L28 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="27" r="1.6" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">Karvon</span>
+    </a>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#about"  data-i18n="nav.about">About</a>
+      <a href="#places" data-i18n="nav.places">Places</a>
+      <a href="#stay"   data-i18n="nav.stay">Stay</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="is-active">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="uz">UZ</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ========================= HERO ========================= -->
+<main id="top">
+<section class="hero">
+  <div class="hero-media" role="img" aria-label="Khiva at golden hour">
+    <!-- Swap for a real photo: assets/images/hero.jpg -->
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Khiva · Urgench · Khorezm</p>
+    <h1 data-i18n="hero.title">The old Silk Road,<br>one search away.</h1>
+    <p class="lede" data-i18n="hero.lede">
+      Karvon brings together hotels, guesthouses and the places worth seeing in Khiva —
+      a walled city that has been hosting travellers for a thousand years.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact" data-i18n="hero.ctaPrimary">Open the Telegram bot</a>
+      <a class="btn btn-ghost" href="#places" data-i18n="hero.ctaSecondary">See what's in Khiva</a>
+    </div>
+    <p class="hero-note" data-i18n="hero.note">Coming soon — the bot is in development.</p>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ========================= STATS ========================= -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat">
+      <span class="stat-value">1990</span>
+      <span class="stat-label" data-i18n="stats.unesco">Ichan-Qala inscribed by UNESCO — the first site in Central Asia</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">26<span class="unit">ha</span></span>
+      <span class="stat-label" data-i18n="stats.walled">of walled inner city, entirely walkable</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">150+</span>
+      <span class="stat-label" data-i18n="stats.stays">places to stay in Khiva, most of them family-run</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= ABOUT ========================= -->
+<section class="section" id="about">
+  <div class="container split">
+    <div class="split-text">
+      <p class="eyebrow" data-i18n="about.eyebrow">What is Karvon</p>
+      <h2 data-i18n="about.title">A caravanserai, rebuilt for people with phones.</h2>
+      <p data-i18n="about.p1">
+        <em>Karvon</em> means caravan. For centuries, travellers crossing Khorezm stopped at
+        caravanserais — places that offered a bed, a meal and directions for the road ahead.
+        We are building the same thing, in the place it started.
+      </p>
+      <p data-i18n="about.p2">
+        Khiva has more to offer than most visitors ever find. Guests arrive, spend a day
+        inside the walls and leave. Karvon exists to fix that: to show what is here, where
+        to sleep, and what is worth the extra night.
+      </p>
+      <ul class="feature-list">
+        <li data-i18n="about.f1"><strong>Hotels and guesthouses</strong> — compared in one place, including the small family houses that never make it onto the big sites.</li>
+        <li data-i18n="about.f2"><strong>Places to visit</strong> — madrasahs, minarets, museums and workshops, with hours and prices that are actually current.</li>
+        <li data-i18n="about.f3"><strong>In your language</strong> — starting with Uzbek, Russian and English, with more to follow.</li>
+      </ul>
+    </div>
+
+    <div class="split-media">
+      <figure class="photo photo-tall">
+        <!-- assets/images/about-1.jpg -->
+        <figcaption data-i18n="about.cap1">Kalta Minor, Khiva</figcaption>
+      </figure>
+      <figure class="photo photo-short">
+        <!-- assets/images/about-2.jpg -->
+        <figcaption data-i18n="about.cap2">Ichan-Qala at dusk</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PLACES ========================= -->
+<section class="section section-tint" id="places">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="places.eyebrow">Inside the walls</p>
+      <h2 data-i18n="places.title">What you came for</h2>
+      <p class="section-lede" data-i18n="places.lede">
+        Ichan-Qala is small enough to cross on foot in twenty minutes and dense enough
+        to fill three days. A few of the things you will find.
+      </p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-media"><!-- assets/images/place-kalta-minor.jpg --></div>
+        <div class="card-body">
+          <span class="tag" data-i18n="places.tag.minaret">Minaret</span>
+          <h3 data-i18n="places.c1.title">Kalta Minor</h3>
+          <p data-i18n="places.c1.text">The turquoise stump that became Khiva's signature — intended to be the tallest minaret in the Islamic world, abandoned at 29 metres.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><!-- assets/images/place-itchan-kala.jpg --></div>
+        <div class="card-body">
+          <span class="tag" data-i18n="places.tag.unesco">UNESCO</span>
+          <h3 data-i18n="places.c2.title">Ichan-Qala</h3>
+          <p data-i18n="places.c2.text">The walled inner city: mud-brick ramparts, more than fifty monuments, and streets that empty out beautifully after the day groups leave.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><!-- assets/images/place-tosh-hovli.jpg --></div>
+        <div class="card-body">
+          <span class="tag" data-i18n="places.tag.palace">Palace</span>
+          <h3 data-i18n="places.c3.title">Tosh-Hovli Palace</h3>
+          <p data-i18n="places.c3.text">The khan's stone courtyard house, tiled floor to ceiling in blue and white majolica. The best interior work in the city.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media"><!-- assets/images/place-islam-khoja.jpg --></div>
+        <div class="card-body">
+          <span class="tag" data-i18n="places.tag.view">Viewpoint</span>
+          <h3 data-i18n="places.c4.title">Islam Khoja Minaret</h3>
+          <p data-i18n="places.c4.text">57 metres, a narrow dark staircase, and the only view that shows you the whole walled city at once. Worth the climb.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= STAY ========================= -->
+<section class="section" id="stay">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow" data-i18n="stay.eyebrow">Where to sleep</p>
+      <h2 data-i18n="stay.title">From a khan's madrasah to a family courtyard</h2>
+      <p class="section-lede" data-i18n="stay.lede">
+        Khiva's accommodation is mostly small and owner-run. That is its charm and also
+        the reason it is hard to find online. Karvon is being built to surface it.
+      </p>
+    </div>
+
+    <div class="stay-grid">
+      <div class="stay-item">
+        <h3 data-i18n="stay.s1.title">Inside the walls</h3>
+        <p data-i18n="stay.s1.text">Converted madrasahs and guesthouses within Ichan-Qala. You wake up inside the monument.</p>
+      </div>
+      <div class="stay-item">
+        <h3 data-i18n="stay.s2.title">Family guesthouses</h3>
+        <p data-i18n="stay.s2.text">Courtyard houses run by the family that lives there. Breakfast included, usually generously.</p>
+      </div>
+      <div class="stay-item">
+        <h3 data-i18n="stay.s3.title">Hotels in Urgench</h3>
+        <p data-i18n="stay.s3.text">Larger and closer to the airport, thirty minutes from the old city.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= CONTACT ========================= -->
+<section class="section section-dark" id="contact">
+  <div class="container contact-inner">
+    <div class="contact-text">
+      <p class="eyebrow" data-i18n="contact.eyebrow">Get in touch</p>
+      <h2 data-i18n="contact.title">Building this in the open</h2>
+      <p data-i18n="contact.lede">
+        Karvon is in active development. If you run a hotel or guesthouse in Khorezm,
+        work in tourism, or just want to be told when the bot goes live — say hello.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label" data-i18n="contact.email">Email</span>
+          <a href="mailto:hello@karvon-khiva.uz">hello@karvon-khiva.uz</a>
+        </li>
+        <li>
+          <span class="contact-label" data-i18n="contact.telegram">Telegram</span>
+          <a href="https://t.me/karvon_khiva" rel="noopener">@karvon_khiva</a>
+        </li>
+        <li>
+          <span class="contact-label" data-i18n="contact.location">Location</span>
+          <span>Khorezm, Uzbekistan</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-card">
+      <h3 data-i18n="contact.card.title">For hotel &amp; guesthouse owners</h3>
+      <p data-i18n="contact.card.text">
+        Listing on Karvon will be free while we build. If you would like your property
+        included from day one, send us the name and we will take it from there.
+      </p>
+      <a class="btn btn-primary btn-block" href="mailto:hello@karvon-khiva.uz?subject=Karvon%20listing" data-i18n="contact.card.cta">List your property</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">Karvon</span>
+      <p data-i18n="footer.tagline">Hotels and places in Khiva, Urgench and the wider Khorezm region.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#about"  data-i18n="nav.about">About</a>
+      <a href="#places" data-i18n="nav.places">Places</a>
+      <a href="#stay"   data-i18n="nav.stay">Stay</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <p class="footer-legal">© <span id="year">2026</span> Karvon · karvon-khiva.uz</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- tiny i18n: swaps text for elements with data-i18n ---------- */
+const STRINGS = {
+  ru: {
+    "nav.about":"О проекте","nav.places":"Места","nav.stay":"Жильё","nav.contact":"Контакты",
+    "hero.eyebrow":"Хива · Ургенч · Хорезм",
+    "hero.title":"Древний Шёлковый путь —<br>в одном поиске.",
+    "hero.lede":"Karvon собирает отели, гостевые дома и главные места Хивы — города за крепостной стеной, который принимает путешественников уже тысячу лет.",
+    "hero.ctaPrimary":"Открыть Telegram-бот","hero.ctaSecondary":"Что посмотреть в Хиве",
+    "hero.note":"Скоро — бот в разработке.",
+    "stats.unesco":"Ичан-Кала в списке ЮНЕСКО — первый объект в Центральной Азии",
+    "stats.walled":"внутреннего города за стеной, весь пешком",
+    "stats.stays":"вариантов размещения в Хиве, большинство — семейные",
+    "about.eyebrow":"Что такое Karvon",
+    "about.title":"Караван-сарай для тех, у кого есть телефон.",
+    "about.p1":"<em>Karvon</em> — это караван. Веками путники, пересекавшие Хорезм, останавливались в караван-сараях: там были ночлег, еда и совет, куда идти дальше. Мы строим то же самое — там, где всё начиналось.",
+    "about.p2":"В Хиве гораздо больше, чем успевает увидеть обычный гость. Люди приезжают, проводят день внутри стен и уезжают. Karvon нужен, чтобы это изменить.",
+    "about.f1":"<strong>Отели и гостевые дома</strong> — в одном месте, включая маленькие семейные дома, которых нет на больших сайтах.",
+    "about.f2":"<strong>Места</strong> — медресе, минареты, музеи и мастерские, с актуальными часами работы и ценами.",
+    "about.f3":"<strong>На вашем языке</strong> — узбекский, русский и английский, дальше больше.",
+    "about.cap1":"Кальта-Минор, Хива","about.cap2":"Ичан-Кала на закате",
+    "places.eyebrow":"Внутри стен","places.title":"То, ради чего вы приехали",
+    "places.lede":"Ичан-Калу можно пересечь пешком за двадцать минут — и провести в ней три дня. Вот лишь часть.",
+    "places.tag.minaret":"Минарет","places.tag.unesco":"ЮНЕСКО","places.tag.palace":"Дворец","places.tag.view":"Смотровая",
+    "places.c1.title":"Кальта-Минор",
+    "places.c1.text":"Бирюзовый «обрубок», ставший символом Хивы: его задумывали как самый высокий минарет исламского мира, но бросили на 29 метрах.",
+    "places.c2.title":"Ичан-Кала",
+    "places.c2.text":"Внутренний город за глинобитными стенами: больше пятидесяти памятников и улицы, которые чудесно пустеют, когда уезжают дневные группы.",
+    "places.c3.title":"Дворец Таш-Хаули",
+    "places.c3.text":"Каменный двор хана, от пола до потолка выложенный бело-голубой майоликой. Лучшие интерьеры города.",
+    "places.c4.title":"Минарет Ислам-Ходжа",
+    "places.c4.text":"57 метров, узкая тёмная лестница и единственный вид, где весь город виден целиком. Стоит подъёма.",
+    "stay.eyebrow":"Где остановиться","stay.title":"От ханского медресе до семейного двора",
+    "stay.lede":"Жильё в Хиве в основном маленькое и семейное. В этом его прелесть — и причина, по которой его трудно найти в интернете.",
+    "stay.s1.title":"Внутри стен","stay.s1.text":"Переоборудованные медресе и гостевые дома в Ичан-Кале. Вы просыпаетесь внутри памятника.",
+    "stay.s2.title":"Семейные гостевые дома","stay.s2.text":"Дома с двором, где живёт сама семья. Завтрак включён — обычно щедрый.",
+    "stay.s3.title":"Отели в Ургенче","stay.s3.text":"Больше и ближе к аэропорту, тридцать минут до старого города.",
+    "contact.eyebrow":"Связаться","contact.title":"Делаем открыто",
+    "contact.lede":"Karvon в активной разработке. Если у вас отель или гостевой дом в Хорезме, вы работаете в туризме или просто хотите узнать о запуске — напишите.",
+    "contact.email":"Почта","contact.telegram":"Telegram","contact.location":"Локация",
+    "contact.card.title":"Владельцам отелей и гостевых домов",
+    "contact.card.text":"Размещение на Karvon бесплатно, пока мы строим. Хотите попасть в проект с первого дня — пришлите название.",
+    "contact.card.cta":"Добавить объект",
+    "footer.tagline":"Отели и места в Хиве, Ургенче и Хорезме."
+  },
+  uz: {
+    "nav.about":"Loyiha","nav.places":"Joylar","nav.stay":"Turar joy","nav.contact":"Aloqa",
+    "hero.eyebrow":"Xiva · Urganch · Xorazm",
+    "hero.title":"Qadimgi Ipak yo'li —<br>bir qidiruv naridagina.",
+    "hero.lede":"Karvon Xivadagi mehmonxonalar, mehmon uylari va ko'rishga arziydigan joylarni bir joyga to'playdi — ming yildan beri sayohatchilarni kutib olayotgan devor ichidagi shahar.",
+    "hero.ctaPrimary":"Telegram botni ochish","hero.ctaSecondary":"Xivada nima bor",
+    "hero.note":"Tez orada — bot ishlab chiqilmoqda.",
+    "stats.unesco":"Ichan-Qal'a YUNESKO ro'yxatida — Markaziy Osiyodagi birinchi obyekt",
+    "stats.walled":"devor ichidagi shahar, butunlay piyoda",
+    "stats.stays":"Xivada turar joy, aksariyati oilaviy",
+    "about.eyebrow":"Karvon nima",
+    "about.title":"Telefoni bor odamlar uchun karvonsaroy.",
+    "about.p1":"<em>Karvon</em> — bu yo'lga chiqqanlar qatori. Asrlar davomida Xorazmdan o'tgan yo'lovchilar karvonsaroylarda to'xtagan: u yerda yotoq, ovqat va yo'l haqida maslahat bo'lgan. Biz o'shanaqa narsani qurmoqdamiz — hammasi boshlangan joyda.",
+    "about.p2":"Xivada oddiy mehmon ko'rib ulgurganidan ko'ra ko'proq narsa bor. Odamlar keladi, devor ichida bir kun o'tkazadi va ketadi. Karvon shuni o'zgartirish uchun kerak.",
+    "about.f1":"<strong>Mehmonxona va mehmon uylari</strong> — bitta joyda, katta saytlarga tushmaydigan kichik oilaviy uylar bilan birga.",
+    "about.f2":"<strong>Ko'rish joylari</strong> — madrasa, minora, muzey va ustaxonalar; ish vaqti va narxi haqiqatan ham dolzarb.",
+    "about.f3":"<strong>O'z tilingizda</strong> — o'zbek, rus va ingliz tilidan boshlab, keyin ko'proq.",
+    "about.cap1":"Kalta Minor, Xiva","about.cap2":"Ichan-Qal'a shom chog'ida",
+    "places.eyebrow":"Devor ichida","places.title":"Siz kelgan narsa",
+    "places.lede":"Ichan-Qal'ani yigirma daqiqada piyoda kesib o'tish mumkin — va uch kun to'ldirish ham mumkin. Mana bir qismi.",
+    "places.tag.minaret":"Minora","places.tag.unesco":"YUNESKO","places.tag.palace":"Saroy","places.tag.view":"Manzara",
+    "places.c1.title":"Kalta Minor",
+    "places.c1.text":"Xivaning ramziga aylangan feruza ustun: islom olamidagi eng baland minora bo'lishi ko'zda tutilgan, 29 metrda to'xtatilgan.",
+    "places.c2.title":"Ichan-Qal'a",
+    "places.c2.text":"Devor ichidagi shahar: ellikdan ortiq yodgorlik va kunduzgi guruhlar ketgach ajoyib bo'shab qoladigan ko'chalar.",
+    "places.c3.title":"Tosh-Hovli saroyi",
+    "places.c3.text":"Xonning tosh hovlisi — poldan shiftgacha ko'k-oq koshin bilan bezatilgan. Shahardagi eng yaxshi ichki bezak.",
+    "places.c4.title":"Islom Xo'ja minorasi",
+    "places.c4.text":"57 metr, tor va qorong'i zina hamda butun shaharni bir vaqtda ko'rsatadigan yagona manzara. Chiqishga arziydi.",
+    "stay.eyebrow":"Qayerda tunash","stay.title":"Xon madrasasidan oilaviy hovligacha",
+    "stay.lede":"Xivadagi turar joylar asosan kichik va oilaviy. Bu uning jozibasi — va internetda topish qiyinligining sababi.",
+    "stay.s1.title":"Devor ichida","stay.s1.text":"Ichan-Qal'adagi qayta tiklangan madrasalar va mehmon uylari. Yodgorlik ichida uyg'onasiz.",
+    "stay.s2.title":"Oilaviy mehmon uylari","stay.s2.text":"Egasi yashaydigan hovlili uylar. Nonushta qo'shilgan — odatda saxovat bilan.",
+    "stay.s3.title":"Urganchdagi mehmonxonalar","stay.s3.text":"Kattaroq va aeroportga yaqin, eski shahargacha o'ttiz daqiqa.",
+    "contact.eyebrow":"Bog'lanish","contact.title":"Ochiq quramiz",
+    "contact.lede":"Karvon faol ishlab chiqilmoqda. Xorazmda mehmonxona yoki mehmon uyingiz bo'lsa, turizmda ishlasangiz yoki shunchaki ishga tushganda xabar olmoqchi bo'lsangiz — yozing.",
+    "contact.email":"Pochta","contact.telegram":"Telegram","contact.location":"Manzil",
+    "contact.card.title":"Mehmonxona va mehmon uyi egalariga",
+    "contact.card.text":"Biz qurayotgan vaqtda Karvonda joylashish bepul. Birinchi kundan bo'lishni istasangiz — nomini yuboring.",
+    "contact.card.cta":"Obyektni qo'shish",
+    "footer.tagline":"Xiva, Urganch va Xorazmdagi mehmonxona va joylar."
+  }
+};
+
+const originals = new Map();
+document.querySelectorAll('[data-i18n]').forEach(el => originals.set(el, el.innerHTML));
+
+function setLang(lang) {
+  const dict = STRINGS[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    el.innerHTML = (dict && dict[key]) ? dict[key] : originals.get(el);
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-switch button').forEach(b =>
+    b.classList.toggle('is-active', b.dataset.lang === lang));
+}
+
+document.querySelectorAll('.lang-switch button').forEach(btn =>
+  btn.addEventListener('click', () => setLang(btn.dataset.lang)));
+
+/* ---------- mobile nav ---------- */
+const navToggle = document.getElementById('navToggle');
+const siteNav = document.getElementById('siteNav');
+navToggle.addEventListener('click', () => {
+  const open = siteNav.classList.toggle('is-open');
+  navToggle.classList.toggle('is-open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
+});
+siteNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  siteNav.classList.remove('is-open');
+  navToggle.classList.remove('is-open');
+}));
+
+/* ---------- header shadow on scroll ---------- */
+const header = document.getElementById('siteHeader');
+const onScroll = () => header.classList.toggle('is-stuck', window.scrollY > 8);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
